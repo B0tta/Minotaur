@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Minotaur</title>
+
+</head>
+
+<body>
+  <style>body{background-image: url(menu/pattern2.png);}</style>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+        <img src="menu/slideshow/scena1.jpg"  style="width:100%; max-width: 1024px; position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;" >
+    </div>
+
+    <div class="mySlides fade">
+        <img src="menu/slideshow/scena1_2.jpg"  style="width:100%; max-width: 1024px; position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;" >
+    </div>
+
+    <div class="mySlides fade">
+        <img src="menu/slideshow/scena1_3.jpg"  style="width:100%; max-width: 1024px; position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;" >
+    </div>
+
+
+
+    <a class="next" onclick="plusSlides(1)"> <img src="menu/slideshow/pulsante.png" class="centro" style="width:8%; max-width: 1024px; position: absolute; margin: auto; top: -650px; left: -800px; right: 0; bottom: 0;"> </a>
+
+    <div class="mySlides fade">
+        <img src="menu/slideshow/scena1_4.jpg"  style="width:100%; max-width: 1024px; position: absolute; margin: auto; top: 0; left: 0; right: 0; bottom: 0;" >
+        <div class="play1">
+        <a href="game.html"><img src="menu/slideshow/pulsante.png" alt="play1" style="width:8%; max-width: 1024px; position: absolute; margin: auto; top: -650px; left: -810px; right: 0; bottom: 0;"> </a>
+      </div>
+
+
+
+</div>
+
+
+
+
+  <script>
+		  var slideIndex = 1;
+		  showSlides(slideIndex);
+		  function plusSlides(n) {
+		    showSlides(slideIndex += n);
+		  }
+
+		  function currentSlide(n) {
+		    showSlides(slideIndex = n);
+		  }
+		  function showSlides(n) {
+		    var i;
+		    var slides = document.getElementsByClassName("mySlides");
+		    if (n > slides.length) {slideIndex = slide.length}
+		    if (n < 1) {slideIndex = slides.length}
+		    for (i = 0; i < slides.length; i++) {
+		        slides[i].style.display = "none";
+		    }
+		    slides[slideIndex-1].style.display = "block";
+		  }
+
+
+  </script>
+</body>
+</html>
