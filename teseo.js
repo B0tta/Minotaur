@@ -37,8 +37,8 @@ function preload() {
     game.load.image('tower9', 'assets/tower9.png');
     game.load.image('supporto', 'assets/supporto.png');
     game.load.image('supporto2', 'assets/supporto2.png');
-    game.load.image('platformB', 'assets/platformB.png');
-    game.load.image('platformV', 'assets/platformV.png');
+    game.load.image('platformB', 'assets/PlatformB.png');
+    game.load.image('platformV', 'assets/PlatformV.png');
     game.load.spritesheet('platformE', 'assets/platformE.png', 336, 30);
     game.load.image('torretta', 'assets/torretta.png');
     game.load.image('torretta2', 'assets/torretta2.png');
